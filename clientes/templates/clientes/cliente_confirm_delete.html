@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width= device-width,  initial-scale=1.0">
+        <title>ELIMINAR CLIENTE</title>
+        {%load static%}
+        <link rel="stylesheet" type="text/css" href="{%static 'clientes/style.css' %}">
+    </head>
+    <body>
+        <div class="container">
+            <h1>Eliminar Cliente</h1>
+            <h2>¿ESTAS SEGURO DE QUERER ELIMINAR A ESTE CLIENTE? </h2>
+            <form method="post">
+                {%csrf_token%}
+                <table class="clientes-table">
+                    <thead>
+                        <tr>
+                            <th>Nombre</th>
+                            <th>Apellidos</th>
+                            <th>Feca de nacimiento</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>{{cliente.nombre}}</td>
+                            <td>{{cliente.apellidos}}</td>
+                            <td>{{cliente.fecha_nac}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+                <a class="btn" href="{%  url 'cliente_list' %}">CANCELAR</a>
+                <button class="btn" type="submit">Confirmar</button>
+            </form>
+        </div>
+       
+    </body>
+</html>

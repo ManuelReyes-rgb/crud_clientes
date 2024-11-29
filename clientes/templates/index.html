@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Voluntarios</title>
+    <!-- enlace a hoja de estilos css-->
+
+    {%load static%}
+    <link rel="stylesheet" type="text/css" href ="{% static 'voluntarios/css/style.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'voluntarios/css/boxicons.min.css' %}">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <a href="#" class="logo">Voluntarios<span>Mex</span></a>
+        <ul class="navbar">
+            <li><a href="#home">inicio</a></li>
+            <li><a href="#info">informacion</a></li>
+            <li><a href="#">nosotros</a></li>
+            <li><a href="#">contacto</a></li>
+        </ul>
+        <div class="h-derecha">
+            <a href="#">síguenos</a>
+            <a href="#"><i class='bx bxl-instagram-alt'></i></a>
+            <a href="#"><i class='bx bxl-facebook-square'></i></a>
+            <div class="bx bx-menu" id="menu-icon"></div>
+        </div>
+    </header>
+
+    <section class="home" id="home">
+        <div class="home-text">
+            <h5 id="typed">Ayuda a</h5>
+            <h1>Las asociaciones</h1>
+            <p>De nuestro país</p>
+            <a href="#" id="btn-pedido" class="btn">Infórmate</a>
+        </div>
+    </section>
+    
+    <section class="columnas" id="info">
+        <div data-aos="zoom-in-up" class="col-tent">
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'voluntarios/img/images (1).jpeg' %}" alt="Imagen de voluntarios prueba">
+                </div>
+                <h4>Voluntarios</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'voluntarios/img/images (2).jpeg' %}" alt="Ayudando a asociaciones">
+                </div>
+                <h4>Ayuda</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'voluntarios/img/images (3).jpeg' %}" alt="Recolectando desechos">
+                </div>
+                <h4>Donaciones</h4>
+            </div>
+            <div class="row">
+                <div class="row-img">
+                    <img src="{% static 'voluntarios/img/images (4).jpeg' %}" alt="Imagen de voluntarios prueba">
+                </div>
+                <h4>Voluntarios</h4>
+            </div>
+        </div>
+    </section>
+    
+    <section class="columnasII">
+        <div data-aos="zoom-in-right" class="col-tento">
+            <div class="rowu">
+                <div class="rowu-ima">
+                    <img src="{%static 'voluntarios/img/capII.png' %}" alt="Nueva Imagen">
+                </div>
+            </div>
+            <div class="home-text2">
+                <h5 id="typeed">TU AYUDA ES IMPORTANTE</h5>
+                <h1>DISPONIBLE</h1>
+                <p>Sumate para ayudar a las mejores asociaciones de tu estado</p>
+                <a href="#" id="btn-promocion" class="btn2">Da click aquí</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer agregado -->
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <h3>Asociaciones Unidad por Causas</h3>
+                <p>Unidos por una causa. Conéctate con las asociaciones más importantes y ayuda a generar un impacto en tu comunidad.</p>
+            </div>
+            <div class="footer-links">
+                <ul>
+                    <li><a href="#">Voluntariado</a></li>
+                    <li><a href="#">Donaciones</a></li>
+                    <li><a href="#">Asociaciones</a></li>
+                    <li><a href="#">Contáctanos</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <a href="#"><i class='bx bxl-facebook'></i></a>
+                <a href="#"><i class='bx bxl-instagram'></i></a>
+                <a href="#"><i class='bx bxl-twitter'></i></a>
+            </div>
+            <p class="footer-copy">&copy; 2024 VoluntariosMex Cualquier imagen usada en esta pagina tiene el derecho de la persona</p>
+        </div>
+    </footer>
+
+</body>
+
+<script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+<script src="{% static 'voluntarios/js/script.js' %}"></script>
+<script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+<script>
+    AOS.init();
+</script>
+</html>
+
+
